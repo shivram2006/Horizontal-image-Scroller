@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+body{
+     background: #191919;
+}
+.gallary{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallary div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallary div img{
+    width: 100%;
+    transition: tranform 0.5s;
+}
+
+.gallary::-webkit-scrollbar{
+    display: none;
+}
+
+.gallary-wrap{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10% auto;
+}
+
+#backBtn, #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+
+.gallary div img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
